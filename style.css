@@ -35,7 +35,7 @@ section{
 header {
     position: fixed;
     width: 100%;
-    top: 0;
+    top: 0px;
     right: 0;
     z-index: 1000 ; 
     display: flex;
@@ -46,16 +46,17 @@ header {
 }
 .logo img {
     width: 40px;
+    
 }
 .navbar {
     display: flex;
 }
 .navbar li {
-    position: inherit;
+    position: relative;
 }
 .navbar a{
     font-size: 1rem;
-    padding: 5px 20px;
+    padding: 10px 20px;
     color: var(--text-color);
     font-weight: 500;
 }
@@ -506,9 +507,9 @@ header {
     }
 
     .navbar a{
-        padding: 1rem;
+        padding: .5rem;
         border-left: 2px solid var(--main-color);
-        margin: 1rem;
+        margin: .5rem;
         display: block;
     }
     .navbar a:hover{
